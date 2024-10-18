@@ -1,5 +1,38 @@
 // olimpus.scss
 
+// Required
+@import "functions";
+
+// Default variable overrides
+/* $body-bg: #beb8b8;
+$body-color: #111; */
+
+// Required
+@import "variables";
+@import "variables-dark";
+@import "maps";
+@import "mixins";
+@import "root";
+
+// Optional Bootstrap components here
+@import "reboot";
+@import "type";
+@import "buttons";
+
+$primary: #f210b9;
+$danger: #abff36;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+// Create your own map
+$custom-colors: (
+  "custom-color": #900,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
 @import "bootstrap";
-
-
