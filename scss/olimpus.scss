@@ -19,29 +19,27 @@ $body-color: #111; */
 @import "type";
 @import "buttons";
 
-$primary: #62269e;
-$danger: #abff36;
+// MODO CLARO
+
+$primary: #D8D3E4;
+$secondary: #FFE17E;
 
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
 );
 
-// Custom map
-$custom-colors: (
-  "custom-color": #900,
-);
-
-// Merge the maps
-$theme-colors: map-merge($theme-colors, $custom-colors);
+// MODO OSCURO
 
 @include color-mode(dark) {
-  $primary-dark: #9c9e26;
+  $primary-dark: #460e7e;
+  $secondary-dark: #dcb204;
 
   $theme-colors: (
     "primary": $primary-dark,
+    "secondary": $secondary-dark,
   );
-  
+
   @import "bootstrap";
 }
 
