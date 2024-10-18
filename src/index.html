@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="./js/main.js"></script>
-    <title>Sandbox</title>
+    <title>Sandbox Olimpus</title>
   </head>
   <body>
     <div class="container py-4 px-3 mx-auto">
       <h1>Olimpus</h1>
-      <button class="btn btn-primary border-radius">Boton</button>
+      <section>
+        <div id="theme-switcher">
+          <button
+            type="button"
+            data-bs-theme-value="light"
+            class="btn btn-info"
+          >
+            Light
+          </button>
+          <button type="button" data-bs-theme-value="dark" class="btn btn-info">
+            Dark
+          </button>
+          <button type="button" data-bs-theme-value="auto" class="btn btn-info">
+            Auto
+          </button>
+        </div>
+      </section>
+      <section>
+        <h2>Primary Colors</h2>
+        <button class="btn btn-primary">Boton</button>
+      </section>
     </div>
   </body>
 </html>

@@ -19,7 +19,7 @@ $body-color: #111; */
 @import "type";
 @import "buttons";
 
-$primary: #f210b9;
+$primary: #62269e;
 $danger: #abff36;
 
 $theme-colors: (
@@ -34,5 +34,15 @@ $custom-colors: (
 
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
+
+@include color-mode(dark) {
+  $primary-dark: #9c9e26;
+
+  $theme-colors: (
+    "primary": $primary-dark,
+  );
+  
+  @import "bootstrap";
+}
 
 @import "bootstrap";
