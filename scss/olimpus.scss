@@ -22,7 +22,6 @@ $body-color: #111; */
 // ------------- MODO DEFAULT -------------
 
 @include color-mode(default) {
-  
   // Definicion de colores
   $primary-default: #62269e;
   $secondary-default: #ffce00;
@@ -89,3 +88,25 @@ $custom-colors: (
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrap";
+
+// - STATUS COLOR
+
+// Definicion de colores
+$success: #1f8e38;
+$dangert: #bf2b39;
+$warning: #f3951f;
+$info: #218681;
+
+// Sobreescritura de colores
+$theme-color-status: (
+  "success": $success,
+  "danger": $danger,
+  "warning": $warning,
+  "info": $info,
+);
+
+// Union de colores
+$theme-colors: map-merge($theme-colors, $theme-color-status);
+
+@import "bootstrap";
+
