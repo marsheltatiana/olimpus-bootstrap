@@ -19,28 +19,73 @@ $body-color: #111; */
 @import "type";
 @import "buttons";
 
-// MODO CLARO
+// ------------- MODO DEFAULT -------------
 
-$primary: #D8D3E4;
-$secondary: #FFE17E;
+@include color-mode(default) {
+  
+  // Definicion de colores
+  $primary-default: #62269e;
+  $secondary-default: #ffce00;
+  $complementary-default: #005cb9;
 
-$theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-);
+  $theme-colors: (
+    "primary": $primary-default,
+    "secondary": $secondary-default,
+  );
 
-// MODO OSCURO
+  //Lista de nuevos colores
+  $custom-colors-default: (
+    "complementary": $complementary-default,
+  );
+
+  // Union de colores
+  $theme-colors: map-merge($theme-colors, $custom-colors-default);
+
+  @import "bootstrap";
+}
+
+// ------------- MODO OSCURO (DARK) -------------
 
 @include color-mode(dark) {
   $primary-dark: #460e7e;
   $secondary-dark: #dcb204;
+  $complementary-dark: #05478a;
 
   $theme-colors: (
     "primary": $primary-dark,
     "secondary": $secondary-dark,
   );
 
+  //Lista de nuevos colores
+  $custom-colors-dark: (
+    "complementary": $complementary-dark,
+  );
+
+  // Union de colores
+  $theme-colors: map-merge($theme-colors, $custom-colors-dark);
+
   @import "bootstrap";
 }
+
+//----------- MODO CLARO (LIGHT) -------------
+
+// Definicion de colores
+$primary-light: #d8d3e4;
+$secondary-light: #ffe17e;
+$complementary-light: #64b1fe;
+
+// Sobreescritura de colores
+$theme-colors: (
+  "primary": $primary-light,
+  "secondary": $secondary-light,
+);
+
+//Lista de nuevos colores
+$custom-colors: (
+  "complementary": $complementary-light,
+);
+
+// Union de colores
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrap";
