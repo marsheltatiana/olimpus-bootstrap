@@ -19,6 +19,21 @@ $body-color: #111; */
 @import "type";
 @import "buttons";
 
+// TIPOGRAFIA--
+
+$custom-display-font-sizes: (
+  1: 40px,
+  2: 32px,
+  3: 28px,
+  4: 24px,
+  5: 20px,
+  6: 16px
+);
+
+$display-font-weight: 600;
+
+$display-font-sizes: map-merge($display-font-sizes,$custom-display-font-sizes);
+
 // ------------- MODO DEFAULT -------------
 
 @include color-mode(default) {

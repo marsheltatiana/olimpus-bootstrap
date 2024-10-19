@@ -1617,64 +1617,54 @@ a > [data-bs-theme=default] code {
   font-weight: 300;
 }
 [data-bs-theme=default] .display-1 {
-  font-size: calc(1.625rem + 4.5vw);
-  font-weight: 300;
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   [data-bs-theme=default] .display-1 {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 }
 [data-bs-theme=default] .display-2 {
-  font-size: calc(1.575rem + 3.9vw);
-  font-weight: 300;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   [data-bs-theme=default] .display-2 {
-    font-size: 4.5rem;
+    font-size: 2rem;
   }
 }
 [data-bs-theme=default] .display-3 {
-  font-size: calc(1.525rem + 3.3vw);
-  font-weight: 300;
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   [data-bs-theme=default] .display-3 {
-    font-size: 4rem;
+    font-size: 1.75rem;
   }
 }
 [data-bs-theme=default] .display-4 {
-  font-size: calc(1.475rem + 2.7vw);
-  font-weight: 300;
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   [data-bs-theme=default] .display-4 {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
 }
 [data-bs-theme=default] .display-5 {
-  font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 600;
   line-height: 1.2;
-}
-@media (min-width: 1200px) {
-  [data-bs-theme=default] .display-5 {
-    font-size: 3rem;
-  }
 }
 [data-bs-theme=default] .display-6 {
-  font-size: calc(1.375rem + 1.5vw);
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 600;
   line-height: 1.2;
-}
-@media (min-width: 1200px) {
-  [data-bs-theme=default] .display-6 {
-    font-size: 2.5rem;
-  }
 }
 [data-bs-theme=default] .list-unstyled {
   padding-left: 0;
@@ -12267,64 +12257,54 @@ a > [data-bs-theme=dark] code {
   font-weight: 300;
 }
 [data-bs-theme=dark] .display-1 {
-  font-size: calc(1.625rem + 4.5vw);
-  font-weight: 300;
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   [data-bs-theme=dark] .display-1 {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 }
 [data-bs-theme=dark] .display-2 {
-  font-size: calc(1.575rem + 3.9vw);
-  font-weight: 300;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   [data-bs-theme=dark] .display-2 {
-    font-size: 4.5rem;
+    font-size: 2rem;
   }
 }
 [data-bs-theme=dark] .display-3 {
-  font-size: calc(1.525rem + 3.3vw);
-  font-weight: 300;
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   [data-bs-theme=dark] .display-3 {
-    font-size: 4rem;
+    font-size: 1.75rem;
   }
 }
 [data-bs-theme=dark] .display-4 {
-  font-size: calc(1.475rem + 2.7vw);
-  font-weight: 300;
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   [data-bs-theme=dark] .display-4 {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
 }
 [data-bs-theme=dark] .display-5 {
-  font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 600;
   line-height: 1.2;
-}
-@media (min-width: 1200px) {
-  [data-bs-theme=dark] .display-5 {
-    font-size: 3rem;
-  }
 }
 [data-bs-theme=dark] .display-6 {
-  font-size: calc(1.375rem + 1.5vw);
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 600;
   line-height: 1.2;
-}
-@media (min-width: 1200px) {
-  [data-bs-theme=dark] .display-6 {
-    font-size: 2.5rem;
-  }
 }
 [data-bs-theme=dark] .list-unstyled {
   padding-left: 0;
@@ -22977,69 +22957,59 @@ progress {
 }
 
 .display-1 {
-  font-size: calc(1.625rem + 4.5vw);
-  font-weight: 300;
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 }
 
 .display-2 {
-  font-size: calc(1.575rem + 3.9vw);
-  font-weight: 300;
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-2 {
-    font-size: 4.5rem;
+    font-size: 2rem;
   }
 }
 
 .display-3 {
-  font-size: calc(1.525rem + 3.3vw);
-  font-weight: 300;
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-3 {
-    font-size: 4rem;
+    font-size: 1.75rem;
   }
 }
 
 .display-4 {
-  font-size: calc(1.475rem + 2.7vw);
-  font-weight: 300;
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-4 {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
 }
 
 .display-5 {
-  font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 600;
   line-height: 1.2;
-}
-@media (min-width: 1200px) {
-  .display-5 {
-    font-size: 3rem;
-  }
 }
 
 .display-6 {
-  font-size: calc(1.375rem + 1.5vw);
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 600;
   line-height: 1.2;
-}
-@media (min-width: 1200px) {
-  .display-6 {
-    font-size: 2.5rem;
-  }
 }
 
 .list-unstyled {
