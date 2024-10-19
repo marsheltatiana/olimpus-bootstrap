@@ -72,6 +72,8 @@ $body-color: #111; */
 $primary-light: #d8d3e4;
 $secondary-light: #ffe17e;
 $complementary-light: #64b1fe;
+$white: #fff;
+$black: #0d0217;
 
 // Sobreescritura de colores
 $theme-colors: (
@@ -82,12 +84,12 @@ $theme-colors: (
 //Lista de nuevos colores
 $custom-colors: (
   "complementary": $complementary-light,
+  "white": $white,
+  "black": $black,
 );
 
 // Union de colores
 $theme-colors: map-merge($theme-colors, $custom-colors);
-
-
 
 // - STATUS COLOR
 
@@ -130,14 +132,9 @@ $theme-colors-grays: (
   "gray-600": $gray-600,
   "gray-700": $gray-700,
   "gray-800": $gray-800,
-  "gray-900": $gray-900
-) ;
+  "gray-900": $gray-900,
+);
 
 $theme-colors: map-merge($theme-colors, $theme-colors-grays);
 
-
-
-
 @import "bootstrap";
-
-
