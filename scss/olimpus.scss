@@ -19,6 +19,17 @@ $body-color: #111; */
 @import "type";
 @import "buttons";
 
+// Variables
+$color-primario: #05000a; 
+// Navbar
+.navbar-olimpus {
+  background-color: darken($color-primario, 10%); // Ejemplo de función de color 
+
+  .navbar-text h1 {
+    color: #ffffff;
+  }
+}
+
 // TIPOGRAFIA--
 
 $custom-display-font-sizes: (
@@ -62,7 +73,7 @@ $display-font-sizes: map-merge($display-font-sizes,$custom-display-font-sizes);
 
 @include color-mode(dark) {
   $primary-dark: #460e7e;
-  $secondary-dark: #dcb204;
+  $secondary-dark: #DCB204;
   $complementary-dark: #05478a;
 
   $theme-colors: (
