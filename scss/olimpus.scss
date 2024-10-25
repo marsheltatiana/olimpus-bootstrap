@@ -21,7 +21,7 @@ $body-color: #111; */
 
 @import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
+@import url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css");
 // Variables
 $color-primario: #05000a;
 // Navbar
@@ -109,7 +109,52 @@ $custom-font-sizes: (
 }
 
 // Body
+/* 
+@font-face {
+  font-family: "Gotham";
+  src: url("./../fonts/Gotham/Gotham/Gotham-Light.otf") format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("./../fonts/Gotham/Gotham/Gotham-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("./../fonts/Gotham/Gotham/Gotham-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+} */
 
+p.display-1 {
+  font-family: "Atma" !important;
+}
+p.display-2 {
+  font-family: "Atma" !important;
+}
+p.display-3 {
+  font-family: "Atma" !important;
+}
+p.display-4 {
+  font-family: "Atma" !important;
+}
+p.display-5 {
+  font-family: "Atma" !important;
+}
+p.display-6 {
+  font-family: "Atma" !important;
+}
+p.display-7 {
+  font-family: "Atma" !important;
+}
+
+p {
+  font-family: "GothamPro" !important;
+  font-weight: normal;
+}
 // body-xlarge
 p.fw-light.xlarge {
   font-size: 24px !important;
