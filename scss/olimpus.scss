@@ -20,7 +20,7 @@ $body-color: #111; */
 @import "buttons";
 
 @import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 // Variables
 $color-primario: #05000a;
@@ -106,6 +106,78 @@ $custom-font-sizes: (
 .fs-1-xlarge {
   font-size: map-get($custom-font-sizes, "fs-1");
   font-weight: $font-weight-fs-1;
+}
+
+// Body
+
+// body-xlarge
+p.fw-light.xlarge {
+  font-size: 24px !important;
+}
+p.fw-normal.xlarge {
+  font-size: 24px !important;
+}
+p.fw-semibold.xlarge {
+  font-size: 24px !important;
+}
+p.fw-bold.xlarge {
+  font-size: 24px !important;
+}
+
+// body-large
+p.fw-light.large {
+  font-size: 20px !important;
+}
+p.fw-normal.large {
+  font-size: 20px !important;
+}
+p.fw-semibold.large {
+  font-size: 20px !important;
+}
+p.fw-bold.large {
+  font-size: 20px !important;
+}
+
+// body-base
+p.fw-light.base {
+  font-size: 16px !important;
+}
+p.fw-normal.base {
+  font-size: 16px !important;
+}
+p.fw-semibold.base {
+  font-size: 16px !important;
+}
+p.fw-bold.base {
+  font-size: 16px !important;
+}
+
+// body-small
+p.fw-light.small {
+  font-size: 14px !important;
+}
+p.fw-normal.small {
+  font-size: 14px !important;
+}
+p.fw-semibold.small {
+  font-size: 14px !important;
+}
+p.fw-bold.small {
+  font-size: 14px !important;
+}
+
+// body-small
+p.fw-light.tiny {
+  font-size: 12px !important;
+}
+p.fw-normal.tiny {
+  font-size: 12px !important;
+}
+p.fw-semibold.tiny {
+  font-size: 12px !important;
+}
+p.fw-bold.tiny {
+  font-size: 12px !important;
 }
 
 // ------------- MODO DEFAULT -------------
