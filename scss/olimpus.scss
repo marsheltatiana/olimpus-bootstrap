@@ -19,13 +19,14 @@ $body-color: #111; */
 @import "type";
 @import "buttons";
 
-@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 // Variables
-$color-primario: #05000a; 
+$color-primario: #05000a;
 // Navbar
 .navbar-olimpus {
-  background-color: darken($color-primario, 10%); // Ejemplo de función de color 
+  background-color: darken($color-primario, 10%); // Ejemplo de función de color
 
   .navbar-text h1 {
     color: #ffffff;
@@ -40,25 +41,39 @@ $color-primario: #05000a;
 $display-font-weight: 600;
 
 // Familia tipográfica para títulos y displays
-$font-family-titulos: 'Atma'; 
-h1, h2, h3, h4, h5, h6,
-.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+$font-family-titulos: "Atma";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
   font-family: $font-family-titulos; // Aquí se aplica la fuente 'Atma'
 }
 
-// Tamaños de fuente para h1 a h6 
+$font-family-parrafos: "Inter";
+
+p {
+  font-family: $font-family-parrafos;
+}
+// Tamaños de fuente para h1 a h6
 
 $custom-h-font-sizes: (
-  1: 40px, 
+  1: 40px,
   2: 32px,
   3: 28px,
   4: 24px,
   5: 20px,
-  6: 16px 
+  6: 16px,
 );
 
-
-$display-font-sizes: map-merge($display-font-sizes,$custom-h-font-sizes);
+$display-font-sizes: map-merge($display-font-sizes, $custom-h-font-sizes);
 
 // Tamaños de fuente para display-1 a display-6
 
@@ -68,10 +83,10 @@ $custom-display-font-sizes: (
   3: 58px,
   4: 52px,
   5: 48px,
-  6: 32px
+  6: 32px,
 );
 
-$display-font-sizes: map-merge($display-font-sizes,$custom-display-font-sizes);
+$display-font-sizes: map-merge($display-font-sizes, $custom-display-font-sizes);
 
 // Tamaños de fuente para textos
 
@@ -85,7 +100,7 @@ $custom-font-sizes: (
   "fs-1": 24px,
   "fs-2": 24px,
   "fs-3": 24px,
-  "fs-4": 24px
+  "fs-4": 24px,
 );
 
 .fs-1-xlarge {
@@ -96,7 +111,6 @@ $custom-font-sizes: (
 // ------------- MODO DEFAULT -------------
 
 @include color-mode(default) {
-  
   // Definicion de colores
   $primary-default: #62269e;
   $secondary-default: #ffce00;
@@ -122,7 +136,7 @@ $custom-font-sizes: (
 
 @include color-mode(dark) {
   $primary-dark: #460e7e;
-  $secondary-dark: #DCB204;
+  $secondary-dark: #dcb204;
   $complementary-dark: #05478a;
 
   $theme-colors: (
