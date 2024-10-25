@@ -2,7 +2,7 @@
 import "./../../dist/css/olimpus.css";
 
 import * as bootstrap from "./../../dist/js/bootstrap";
-
+/* 
 (() => {
     'use strict'
   
@@ -77,3 +77,4 @@ import * as bootstrap from "./../../dist/js/bootstrap";
         })
     })
   })()
+ */

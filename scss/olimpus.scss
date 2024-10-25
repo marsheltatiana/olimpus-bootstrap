@@ -88,23 +88,10 @@ $custom-font-sizes: (
   "fs-4": 24px
 );
 
-
 .fs-1-xlarge {
   font-size: map-get($custom-font-sizes, "fs-1");
   font-weight: $font-weight-fs-1;
 }
-
-.fs-2-xlarge {
-  font-size: map-get($custom-font-sizes, "fs-2");
-  font-weight: $font-weight-fs-2;
-}
-
-.fs-3-xlarge {
-  font-size: map-get($custom-font-sizes, "fs-3");
-  font-weight: $font-weight-fs-3;
-}
-
-
 
 // ------------- MODO DEFAULT -------------
 
