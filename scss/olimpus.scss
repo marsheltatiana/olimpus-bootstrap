@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 // Tamaños de fuente para h1 a h6 
+
 $custom-h-font-sizes: (
   1: 40px, 
   2: 32px,
@@ -55,6 +56,7 @@ $custom-h-font-sizes: (
   5: 20px,
   6: 16px 
 );
+
 
 $display-font-sizes: map-merge($display-font-sizes,$custom-h-font-sizes);
 
@@ -86,14 +88,28 @@ $custom-font-sizes: (
   "fs-4": 24px
 );
 
+
 .fs-1-xlarge {
   font-size: map-get($custom-font-sizes, "fs-1");
   font-weight: $font-weight-fs-1;
 }
 
+.fs-2-xlarge {
+  font-size: map-get($custom-font-sizes, "fs-2");
+  font-weight: $font-weight-fs-2;
+}
+
+.fs-3-xlarge {
+  font-size: map-get($custom-font-sizes, "fs-3");
+  font-weight: $font-weight-fs-3;
+}
+
+
+
 // ------------- MODO DEFAULT -------------
 
 @include color-mode(default) {
+  
   // Definicion de colores
   $primary-default: #62269e;
   $secondary-default: #ffce00;
