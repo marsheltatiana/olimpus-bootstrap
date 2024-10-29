@@ -250,24 +250,17 @@
       <div class="row g-3 mb-5">
           <div class="col">
               <label for="input1" class="form-label">Label</label>
-              <input type="text" class="form-control" id="input1" placeholder="Placeholder">
+              <input disabled type="text" class="form-control" id="input1" placeholder="Placeholder">
           </div>
           <div class="col">
-              <label for="input2" class="form-label">Label</label>
-              <input type="text" class="form-control" id="input2" placeholder="Placeholder">
-          </div>
-          <div class="col">
-              <label for="input3" class="form-label">Label</label>
-              <input type="text" class="form-control purple-outline" id="input3" placeholder="Placeholder">
-          </div>
-          <div class="col">
-              <label for="input4" class="form-label">Label</label>
-              <input type="text" class="form-control red-outline" id="input4" placeholder="Placeholder">
-          </div>
-          <div class="col">
-              <label for="input5" class="form-label">Label</label>
-              <input type="text" class="form-control gray-bg" id="input5" placeholder="Placeholder">
-          </div>
+            <label for="input1" class="form-label">Label</label>
+            <input  type="text" class="form-control" id="input1" placeholder="Placeholder">
+        </div>
+        <div class="col">
+          <label for="input1" class="form-label">Label</label>
+          <input  type="text" class="form-control" id="input1" placeholder="Placeholder">
+      </div>
+        
       </div>
 
       <P class="mb-4">Textarea</P>
@@ -341,6 +334,112 @@
 </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Inputs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  
+    <div class="container my-5">
+      <h1 class="text-center text-white bg-purple p-3">Forms Inputs</h1>
+      
+      <!-- Text Field with Different States -->
+      <div class="my-4">
+        <h2 class="section-title">Text Field States</h2>
+        <div class="row g-3">
+          <div class="col">
+            <label class="form-label">Label</label>
+            <input type="text" class="form-control" placeholder="Placeholder">
+          </div>
+          <div class="col">
+            <label class="form-label">Active State</label>
+            <input type="text" class="form-control state-active" placeholder="Placeholder">
+          </div>
+          <div class="col">
+            <label class="form-label">Error State</label>
+            <input type="text" class="form-control state-error" placeholder="Placeholder">
+          </div>
+          <div class="col">
+            <label class="form-label">Disabled State</label>
+            <input type="text" class="form-control" placeholder="Placeholder" disabled>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Textarea with Different States -->
+      <div class="my-4">
+        <h2 class="section-title">Textarea States</h2>
+        <div class="row g-3">
+          <div class="col">
+            <label class="form-label">Default State</label>
+            <textarea class="form-control" placeholder="Write a message"></textarea>
+          </div>
+          <div class="col">
+            <label class="form-label">Active State</label>
+            <textarea class="form-control state-active" placeholder="Write a message"></textarea>
+          </div>
+          <div class="col">
+            <label class="form-label">Error State</label>
+            <textarea class="form-control state-error" placeholder="Write a message"></textarea>
+          </div>
+          <div class="col">
+            <label class="form-label">Disabled State</label>
+            <textarea class="form-control" placeholder="Write a message" disabled></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Radio Buttons -->
+      <div class="my-4">
+        <h2 class="section-title">Radio Buttons</h2>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioOptions" id="radio1">
+          <label class="form-check-label" for="radio1">Default</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input state-active" type="radio" name="radioOptions" id="radio2">
+          <label class="form-check-label" for="radio2">Active</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input state-error" type="radio" name="radioOptions" id="radio3">
+          <label class="form-check-label" for="radio3">Error</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioOptions" id="radio4" disabled>
+          <label class="form-check-label" for="radio4">Disabled</label>
+        </div>
+      </div>
+  
+      <!-- Checkboxes -->
+      <div class="my-4">
+        <h2 class="section-title">Checkboxes</h2>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check1">
+          <label class="form-check-label" for="check1">Default</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input state-active" type="checkbox" id="check2" checked>
+          <label class="form-check-label" for="check2">Active</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input state-error" type="checkbox" id="check3">
+          <label class="form-check-label" for="check3">Error</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check4" disabled>
+          <label class="form-check-label" for="check4">Disabled</label>
+        </div>
+      </div>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
+  
   </body>
 </html>

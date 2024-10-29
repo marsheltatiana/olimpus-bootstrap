@@ -378,4 +378,35 @@ body {
   background-color: #5a34a5;
   color: white;
 }
+
+/* General Styling */
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+/* Input States */
+.state-active {
+  border-color: #6f42c1; /* Purple border */
+}
+
+.state-error {
+  border-color: #dc3545; /* Red border */
+}
+
+.state-active:focus {
+  border-color: #6f42c1;
+  box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.25);
+}
+
+.state-error:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+/* Section Title Styling */
+.section-title {
+  font-size: 1.25rem;
+  color: #6f42c1;
+}
+
 @import "bootstrap";
