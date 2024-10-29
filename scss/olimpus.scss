@@ -108,27 +108,6 @@ $custom-font-sizes: (
   font-weight: $font-weight-fs-1;
 }
 
-// Body
-/* 
-@font-face {
-  font-family: "Gotham";
-  src: url("./../fonts/Gotham/Gotham/Gotham-Light.otf") format("opentype");
-  font-weight: lighter;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham";
-  src: url("./../fonts/Gotham/Gotham/Gotham-Medium.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham";
-  src: url("./../fonts/Gotham/Gotham/Gotham-Bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-} */
-
 p.display-1 {
   font-family: "Atma" !important;
 }
@@ -343,4 +322,60 @@ $theme-colors-grays: (
 
 $theme-colors: map-merge($theme-colors, $theme-colors-grays);
 
+// FORUMS IMPUT
+
+.form-control:focus {
+  box-shadow: none;
+}
+.form-control.purple-outline {
+  border-color: purple;
+}
+.form-control.purple-outline:focus {
+  border-color: purple;
+}
+.form-control.red-outline {
+  border-color: red;
+}
+.form-control.red-outline:focus {
+  border-color: red;
+}
+.form-control.gray-bg {
+  background-color: #f8f9fa;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #6f42c1;
+  margin-bottom: 1rem;
+}
+
+.form-control.placeholder-purple {
+  border-color: #6f42c1;
+}
+
+.form-control.placeholder-red {
+  border-color: #d9534f;
+}
+
+.form-control.placeholder-grey {
+  border-color: #adb5bd;
+}
+
+.btn-purple {
+  background-color: #6f42c1;
+  color: white;
+}
+
+.btn-purple:hover {
+  background-color: #5a34a5;
+  color: white;
+}
 @import "bootstrap";
