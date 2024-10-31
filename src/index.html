@@ -10,6 +10,7 @@
     />
     <title>Sandbox Olimpus</title>
   </head>
+
   <body>
     <!-- Navbar 1: Título -->
     <nav class="navbar navbar-olimpus d-flex justify-content-between px-4">
@@ -19,16 +20,23 @@
         </span>
       </div>
     </nav>
-    <section class="p-4">
-      <h2 class="mb-3 text-secondary">Importar estilo</h2>
-      <pre class="p-3 bg-light border rounded">
-        <code>&lt;link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/marsheltatiana/olimpus-bootstrap@olimpus-5.3.0/dist/css/olimpus.css"
-        /&gt;
-        </code>
-      </pre>
-    </section>
+
+    <div class="card p-3 shadow-sm">
+      <p class="card-title text-center">Importar Estilos</p>
+      <div class="input-group">
+        <input
+          type="text"
+          id="cssLink"
+          class="form-control"
+          value='<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marsheltatiana/olimpus-bootstrap@olimpus-5.3.0/dist/css/olimpus.css" />'
+          readonly
+        />
+        <button class="btn btn-primary" id="copyButton">
+          <i class="bi bi-clipboard"></i> Copiar
+        </button>
+      </div>
+    </div>
+
     <!-- Navbar 2: Tipografía -->
     <nav class="navbar" style="background-color: #60269e">
       <div class="container-fluid">
@@ -38,7 +46,7 @@
       </div>
     </nav>
     <br />
-    <section class="p-4">
+    <section class="container p-4">
       <p class="fw-bold fs-3">Semi-Bold Headings</p>
       <div>
         <h1>h1. Heading Title</h1>
@@ -78,7 +86,6 @@
           In ultricies fermentum aliquet. Pellentesque dui magna, condimentum
           non ullamcorper at, cursus in sem. Nunc condimentum.
         </p>
-        
       </section>
       <section class="mt-3">
         <p class="fw-bold fs-3">Body-large</p>
@@ -99,7 +106,6 @@
           In ultricies fermentum aliquet. Pellentesque dui magna, condimentum
           non ullamcorper at, cursus in sem. Nunc condimentum.
         </p>
-        
       </section>
       <section class="mt-3">
         <p class="fw-bold fs-3">Body-base</p>
@@ -140,28 +146,28 @@
           In ultricies fermentum aliquet. Pellentesque dui magna, condimentum
           non ullamcorper at, cursus in sem. Nunc condimentum.
         </p>
-      <section class="mt-3">
-        <p class="fw-bold fs-3">Body-tiny</p>
+        <section class="mt-3">
+          <p class="fw-bold fs-3">Body-tiny</p>
 
-        <p class="fw-light tiny">
-          In ultricies fermentum aliquet. Pellentesque dui magna, condimentum
-          non ullamcorper at, cursus in sem. Nunc condimentum.
-        </p>
-        <p class="fw-normal tiny">
-          In ultricies fermentum aliquet. Pellentesque dui magna, condimentum
-          non ullamcorper at, cursus in sem. Nunc condimentum.
-        </p>
-        <p class="fw-semibold tiny">
-          In ultricies fermentum aliquet. Pellentesque dui magna, condimentum
-          non ullamcorper at, cursus in sem. Nunc condimentum.
-        </p>
-        <p class="fw-bold tiny">
-          In ultricies fermentum aliquet. Pellentesque dui magna, condimentum
-          non ullamcorper at, cursus in sem. Nunc condimentum.
-        </p>
+          <p class="fw-light tiny">
+            In ultricies fermentum aliquet. Pellentesque dui magna, condimentum
+            non ullamcorper at, cursus in sem. Nunc condimentum.
+          </p>
+          <p class="fw-normal tiny">
+            In ultricies fermentum aliquet. Pellentesque dui magna, condimentum
+            non ullamcorper at, cursus in sem. Nunc condimentum.
+          </p>
+          <p class="fw-semibold tiny">
+            In ultricies fermentum aliquet. Pellentesque dui magna, condimentum
+            non ullamcorper at, cursus in sem. Nunc condimentum.
+          </p>
+          <p class="fw-bold tiny">
+            In ultricies fermentum aliquet. Pellentesque dui magna, condimentum
+            non ullamcorper at, cursus in sem. Nunc condimentum.
+          </p>
+        </section>
       </section>
     </section>
-
     <!-- Navbar 3: Colors -->
     <nav class="navbar" style="background-color: #60269e">
       <div class="container-fluid">
@@ -170,7 +176,7 @@
         </p>
       </div>
     </nav>
-    <section class="p-4">
+    <section class="container p-4">
       <p class="fw-bold fs-3">Primary Colors</p>
       <section class="d-flex gap-4">
         <div data-bs-theme="light">
@@ -237,8 +243,8 @@
         <span class="badge text-bg-black">black</span>
       </section>
     </section>
-     <!-- Navbar 4: Forms Inputs -->
-     <nav class="navbar" style="background-color: #60269e">
+    <!-- Navbar 4: Forms Inputs -->
+    <nav class="navbar" style="background-color: #60269e">
       <div class="container-fluid">
         <p style="color: #ffffff; font-family: sans-serif; font-size: 30px">
           Forms Inputs
@@ -246,200 +252,139 @@
       </div>
     </nav>
     <div class="container mt-5">
-      <p class="mb-4">Text Filed</p>
-      <div class="row g-3 mb-5">
-          <div class="col">
-              <label for="input1" class="form-label">Label</label>
-              <input disabled type="text" class="form-control" id="input1" placeholder="Placeholder">
-          </div>
-          <div class="col">
-            <label for="input1" class="form-label">Label</label>
-            <input  type="text" class="form-control" id="input1" placeholder="Placeholder">
-        </div>
-        <div class="col">
-          <label for="input1" class="form-label">Label</label>
-          <input  type="text" class="form-control" id="input1" placeholder="Placeholder">
-      </div>
-        
-      </div>
+      <p>Text Field</p>
+      <!-- Input Fields in a Single Row -->
+      <div class="d-flex gap-4">
+        <!-- Enabled  and Active with Focus State -->
+        <form class="form-group">
+          <label for="input-enabled" class="form-label">Label</label>
+          <input
+            type="text"
+            id="input-enabled"
+            class="form-control"
+            placeholder="Enabled input"
+          />
+        </form>
 
-      <P class="mb-4">Textarea</P>
-      <div class="row g-3">
-          <div class="col">
-              <label for="textarea1" class="form-label">Label</label>
-              <textarea class="form-control" id="textarea1" rows="3" placeholder="Write a message"></textarea>
-          </div>
-          <div class="col">
-              <label for="textarea2" class="form-label">Label</label>
-              <textarea class="form-control" id="textarea2" rows="3" placeholder="Write a message"></textarea>
-          </div>
-          <div class="col">
-              <label for="textarea3" class="form-label">Label</label>
-              <textarea class="form-control purple-outline" id="textarea3" rows="3" placeholder="Write a message"></textarea>
-          </div>
-          <div class="col">
-              <label for="textarea4" class="form-label">Label</label>
-              <textarea class="form-control red-outline" id="textarea4" rows="3" placeholder="Write a message"></textarea>
-          </div>
-          <div class="col">
-              <label for="textarea5" class="form-label">Label</label>
-              <textarea class="form-control gray-bg" id="textarea5" rows="3" placeholder="Write a message"></textarea>
-          </div>
-      </div>
-  </div>
- <!-- Radio Buttons -->
- <div class="my-4">
-  <p class="section-title">Radio Buttons</p>
-  <div class="form-check">
-    <input class="form-check-input" type="radio" name="radioOptions" id="radio1">
-    <label class="form-check-label" for="radio1">Label</label>
-  </div>
-  <div class="form-check">
-    <input class="form-check-input" type="radio" name="radioOptions" id="radio2">
-    <label class="form-check-label" for="radio2">Label</label>
-  </div>
-</div>
-
-<!-- Checkboxes -->
-<div class="my-4">
-  <p class="section-title">Checkboxes</p>
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" id="check1">
-    <label class="form-check-label" for="check1">Label</label>
-  </div>
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" id="check2" checked>
-    <label class="form-check-label" for="check2">Label</label>
-  </div>
-</div>
-
-  <!-- Dropdowns -->
-  <div class="my-4">
-    <p class="section-title">Dropdowns</p>
-    <select class="form-select mb-3">
-      <option selected>General</option>
-      <option>Option 1</option>
-      <option>Option 2</option>
-    </select>
-    <div class="dropdown">
-      <button class="btn btn-purple dropdown-toggle" type="button" data-bs-toggle="dropdown">
-        Logout
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Logout</a></li>
-        <li><a class="dropdown-item" href="#">Logout</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Inputs</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-  
-    <div class="container my-5">
-      <h1 class="text-center text-white bg-purple p-3">Forms Inputs</h1>
-      
-      <!-- Text Field with Different States -->
-      <div class="my-4">
-        <h2 class="section-title">Text Field States</h2>
-        <div class="row g-3">
-          <div class="col">
-            <label class="form-label">Label</label>
-            <input type="text" class="form-control" placeholder="Placeholder">
-          </div>
-          <div class="col">
-            <label class="form-label">Active State</label>
-            <input type="text" class="form-control state-active" placeholder="Placeholder">
-          </div>
-          <div class="col">
-            <label class="form-label">Error State</label>
-            <input type="text" class="form-control state-error" placeholder="Placeholder">
-          </div>
-          <div class="col">
-            <label class="form-label">Disabled State</label>
-            <input type="text" class="form-control" placeholder="Placeholder" disabled>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Textarea with Different States -->
-      <div class="my-4">
-        <h2 class="section-title">Textarea States</h2>
-        <div class="row g-3">
-          <div class="col">
-            <label class="form-label">Default State</label>
-            <textarea class="form-control" placeholder="Write a message"></textarea>
-          </div>
-          <div class="col">
-            <label class="form-label">Active State</label>
-            <textarea class="form-control state-active" placeholder="Write a message"></textarea>
-          </div>
-          <div class="col">
-            <label class="form-label">Error State</label>
-            <textarea class="form-control state-error" placeholder="Write a message"></textarea>
-          </div>
-          <div class="col">
-            <label class="form-label">Disabled State</label>
-            <textarea class="form-control" placeholder="Write a message" disabled></textarea>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Radio Buttons -->
-      <div class="my-4">
-        <h2 class="section-title">Radio Buttons</h2>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="radioOptions" id="radio1">
-          <label class="form-check-label" for="radio1">Default</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input state-active" type="radio" name="radioOptions" id="radio2">
-          <label class="form-check-label" for="radio2">Active</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input state-error" type="radio" name="radioOptions" id="radio3">
-          <label class="form-check-label" for="radio3">Error</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="radioOptions" id="radio4" disabled>
-          <label class="form-check-label" for="radio4">Disabled</label>
-        </div>
-      </div>
-  
-      <!-- Checkboxes -->
-      <div class="my-4">
-        <h2 class="section-title">Checkboxes</h2>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="check1">
-          <label class="form-check-label" for="check1">Default</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input state-active" type="checkbox" id="check2" checked>
-          <label class="form-check-label" for="check2">Active</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input state-error" type="checkbox" id="check3">
-          <label class="form-check-label" for="check3">Error</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="check4" disabled>
-          <label class="form-check-label" for="check4">Disabled</label>
-        </div>
+        <form class="form-group">
+          <label for="inputError" class="form-label">Input con Error</label>
+          <input
+            type="text"
+            class="form-control is-invalid"
+            id="inputError"
+            placeholder="Error input"
+          />
+        </form>
+        <!-- Disabled State -->
+        <form class="form-group">
+          <label for="input-disabled" class="form-label">Label</label>
+          <input
+            type="text"
+            id="input-disabled"
+            class="form-control"
+            placeholder="Disabled input"
+            disabled
+          />
+        </form>
       </div>
     </div>
-  
+
+    <div class="container mt-5">
+      <p>Text Area</p>
+      <!-- Input Fields in a Single Row -->
+      <div class="d-flex gap-4">
+        <!-- Enabled  and Active with Focus State -->
+        <form class="form-group">
+          <label for="input-enabled" class="form-label">Label</label>
+          <textarea
+            type="text"
+            id="input-enabled"
+            class="form-control"
+            placeholder="Write a message"
+          ></textarea>
+        </form>
+
+        <form class="form-group">
+          <label for="inputError" class="form-label">Input con Error</label>
+          <textarea
+            type="text"
+            class="form-control is-invalid"
+            id="inputError"
+            placeholder="Write a message"
+          ></textarea>
+        </form>
+        <!-- Disabled State -->
+        <form class="form-group">
+          <label for="input-disabled" class="form-label">Label</label>
+          <textarea
+            type="text"
+            id="input-disabled"
+            class="form-control"
+            placeholder="Write a message"
+            disabled
+          ></textarea>
+        </form>
+      </div>
+    </div>
+    <!-- </div> -->
+    <!-- Radio Buttons -->
+    <div class="container my-4">
+      <p class="section-title">Radio Buttons</p>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="radioOptions"
+          id="radio1"
+        />
+        <label class="form-check-label" for="radio1">Label</label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="radioOptions"
+          id="radio2"
+        />
+        <label class="form-check-label" for="radio2">Label</label>
+      </div>
+    </div>
+
+    <!-- Checkboxes -->
+    <div class="container my-4">
+      <p class="section-title">Checkboxes</p>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check1" />
+        <label class="form-check-label" for="check1">Label</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="check2" checked />
+        <label class="form-check-label" for="check2">Label</label>
+      </div>
+    </div>
+    <!-- Dropdowns -->
+    <div class="container my-4">
+      <p class="section-title">Dropdowns</p>
+      <select class="form-select mb-3">
+        <option selected>General</option>
+        <option>Option 1</option>
+        <option>Option 2</option>
+      </select>
+      <div class="dropdown">
+        <button
+          class="btn btn-purple dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+        >
+          Logout
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-  </html>
-  
   </body>
 </html>

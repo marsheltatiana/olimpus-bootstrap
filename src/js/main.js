@@ -78,3 +78,17 @@ import * as bootstrap from "./../../dist/js/bootstrap";
     })
   })()
  */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const copyButton = document.querySelector("#copyButton");
+  const cssLink = document.querySelector("#cssLink");
+
+  copyButton.addEventListener("click", () => {
+    cssLink.select();
+    cssLink.setSelectionRange(0, 99999); // Para móviles
+    navigator.clipboard
+      .writeText(cssLink.value)
+      .then(() => alert("Texto copiado al portapapeles"))
+      .catch((err) => console.error("Error al copiar: ", err));
+  });
+});

@@ -206,12 +206,11 @@ p.fw-bold.tiny {
 
 // ------------- MODO DEFAULT -------------
 
+// Definicion de colores
+$primary-default: #60269e;
+$secondary-default: #ffcd00;
+$complementary-default: #005cb9;
 @include color-mode(default) {
-  // Definicion de colores
-  $primary-default: #60269E;
-  $secondary-default: #FFCD00;
-  $complementary-default: #005cb9;
-
   $theme-colors: (
     "primary": $primary-default,
     "secondary": $secondary-default,
@@ -230,11 +229,11 @@ p.fw-bold.tiny {
 
 // ------------- MODO OSCURO (DARK) -------------
 
-@include color-mode(dark) {
-  $primary-dark: #460e7e;
-  $secondary-dark: #dcb204;
-  $complementary-dark: #05478a;
+$primary-dark: #460e7e;
+$secondary-dark: #dcb204;
+$complementary-dark: #05478a;
 
+@include color-mode(dark) {
   $theme-colors: (
     "primary": $primary-dark,
     "secondary": $secondary-dark,
@@ -280,7 +279,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Definicion de colores
 $success: #1f8e38;
-$dangert: #bf2b39;
+$danger: #bf2b39;
 $warning: #f3951f;
 $info: #218681;
 
@@ -323,28 +322,51 @@ $theme-colors-grays: (
 $theme-colors: map-merge($theme-colors, $theme-colors-grays);
 
 // FORUMS IMPUT
+/* Estilos de los inputs */
 
-.form-control:focus {
-  box-shadow: none;
+$focus-color: $primary-default;
+
+$input-disabled-color: $gray-200;
+$input-disabled-bg: $gray-200;
+$input-disabled-border-color: $gray-300;
+$input-border-width: 1px;
+$input-border-color: $gray-400;
+
+$input-focus-bg: $input-bg;
+$input-focus-border-color: tint-color($focus-color, 50%);
+$input-focus-color: $dark;
+$input-focus-width: $input-btn-focus-width;
+$input-focus-box-shadow: 0 0 $focus-ring-blur $focus-ring-width
+  rgba(#6610f2, 0.15);
+
+input:invalid {
+  box-shadow: 0 0 $focus-ring-blur $focus-ring-width rgba($danger, 0.2) !important;
 }
-.form-control.purple-outline {
-  border-color: purple;
+
+input:enabled::placeholder {
+  color: $gray-600 !important;
 }
-.form-control.purple-outline:focus {
-  border-color: purple;
+
+input:active::placeholder {
+  color: $gray-900 !important;
 }
-.form-control.red-outline {
-  border-color: red;
+
+input:active {
+  background: $white !important;
+  color: $gray-900 !important;
+  border: 1px solid var($gray-400, #ced4da) !important;
 }
-.form-control.red-outline:focus {
-  border-color: red;
+
+input:disabled {
+  color: $gray-600 !important;
 }
-.form-control.gray-bg {
-  background-color: #f8f9fa;
+
+input:disabled::placeholder {
+  color: $gray-600 !important;
 }
 
 body {
-  background-color: #f8f9fa;
+  background-color: #111519;
 }
 
 .bg-purple {
@@ -377,36 +399,6 @@ body {
 .btn-purple:hover {
   background-color: #5a34a5;
   color: white;
-}
-
-/* General Styling */
-.bg-purple {
-  background-color: #6f42c1;
-}
-
-/* Input States */
-.state-active {
-  border-color: #6f42c1; /* Purple border */
-}
-
-.state-error {
-  border-color: #dc3545; /* Red border */
-}
-
-.state-active:focus {
-  border-color: #6f42c1;
-  box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.25);
-}
-
-.state-error:focus {
-  border-color: #dc3545;
-  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
-}
-
-/* Section Title Styling */
-.section-title {
-  font-size: 1.25rem;
-  color: #6f42c1;
 }
 
 @import "bootstrap";
