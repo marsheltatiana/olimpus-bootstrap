@@ -379,8 +379,12 @@ body {
   margin-bottom: 1rem;
 }
 
+.form-check-input:checked {
+  background: var(--Primary-default, #60269E);
+}
+
 .form-control.placeholder-purple {
-  border-color: #6f42c1;
+  border: 2px solid #7749F8;
 }
 
 .form-control.placeholder-red {
