@@ -252,7 +252,7 @@
       </div>
     </nav>
     <div class="container mt-5">
-      <p>Text Field</p>
+      <p class="section-title">Text Field</p>
       <!-- Input Fields in a Single Row -->
       <div class="d-flex gap-4">
         <!-- Enabled  and Active with Focus State -->
@@ -290,7 +290,7 @@
     </div>
 
     <div class="container mt-5">
-      <p>Text Area</p>
+      <p class="section-title">Text Area</p>
       <!-- Input Fields in a Single Row -->
       <div class="d-flex gap-4">
         <!-- Enabled  and Active with Focus State -->
@@ -330,24 +330,54 @@
     <!-- Radio Buttons -->
     <div class="container my-4">
       <p class="section-title">Radio Buttons</p>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="radioOptions"
-          id="radio1"
-        />
-        <label class="form-check-label" for="radio1">Label</label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="radioOptions"
-          id="radio2"
-        />
-        <label class="form-check-label" for="radio2">Label</label>
-      </div>
+      <section class="d-flex gap-4">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="radioOptions"
+            id="radio1"
+          />
+          <label class="form-check-label" for="radio1">Label</label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="radioOptions"
+            id="radio2"
+          />
+          <label class="form-check-label" for="radio2">Label</label>
+        </div>
+      </section>
+      <section class="d-flex gap-1">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="radioOptions"
+            id="radio1"
+          />
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="radioOptions"
+            id="radio2"
+            checked
+          />
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="radioOptions"
+            id="radio2"
+            disabled
+          />
+        </div>
+      </section>
     </div>
 
     <!-- Checkboxes -->

@@ -380,11 +380,11 @@ body {
 }
 
 .form-check-input:checked {
-  background: var(--Primary-default, #60269E);
+  background: var(--Primary-default, #60269e);
 }
 
 .form-control.placeholder-purple {
-  border: 2px solid #7749F8;
+  border: 2px solid #7749f8;
 }
 
 .form-control.placeholder-red {
@@ -404,5 +404,56 @@ body {
   background-color: #5a34a5;
   color: white;
 }
+/* Radio Buttons */
+
+/* Estilo base para los radio buttons de Bootstrap */
+.form-check-input[type="radio"] {
+  border: 1px solid $primary-light; /* Borde púrpura */
+  border-radius: 50%; /* Redondeado para que sea un círculo */
+  background-color: $white;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Sombra para el estado de foco */
+.form-check-input[type="radio"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px $primary-default;
+}
+
+/* Estilo cuando está seleccionado */
+.form-check-input[type="radio"]:checked {
+  background-color: $primary-default; /* Fondo púrpura */
+  border-color: $primary-default; /* Borde púrpura */
+}
+
+/* Círculo blanco en el centro cuando está seleccionado */
+.form-check-input[type="radio"]:checked::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: $white; /* Círculo blanco en el centro */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-check-input[type="radio"]:disabled {
+  border: 1px solid $primary-light; /* Borde púrpura */
+  border-radius: 50%; /* Redondeado para que sea un círculo */
+  background-color: $gray-200;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Checkbox */
 
 @import "bootstrap";
