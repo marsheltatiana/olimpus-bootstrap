@@ -22652,9 +22652,12 @@ body {
 }
 
 /* Checkbox */
+.form-check-input[type=checkbox] {
+  border: 1px solid #60269e;
+}
+
 .form-check-input[type=checkbox]:checked {
   background-color: #60269e;
-  border: 1px solid #6c757d;
 }
 
 /*!
