@@ -453,7 +453,7 @@ body {
 /* Checkbox */
 
 .form-check-input[type="checkbox"] {
-  border: 1px solid $primary-default
+  border: 1px solid $primary-default;
 }
 
 .form-check-input[type="checkbox"]:checked {
@@ -475,16 +475,40 @@ body {
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-
 input.btn-check[type="radio"] {
   border: 10px solid $gray-300;
-
 }
 
 input.btn-check[type="radio"]:checked {
   border: 5px solid $primary-default !important;
 }
 
+/* Dropdowns */
+
+$dropdown-border-color: $gray-400;
+$dropdown-bg: $white;
+
+$dropdown-link-active-color: $component-active-color;
+$dropdown-link-active-bg: $primary-default;
+$dropdown-link-disabled-color: $gray-800;
+
+.dropdown ul li .dropdown-item.disabled {
+  background-color: $gray-300;
+}
+
+.dropdown .btn.dropdown-toggle {
+  border: 1px solid $gray-400;
+}
+
+/* Selects */
+
+$form-select-disabled-color: null;
+$form-select-disabled-bg: $gray-800;
+
+select.form-select option:checked {
+  background-color: $primary-default !important;
+  color: $white;
+}
 
 /* Buttons */
 
@@ -497,25 +521,21 @@ input.btn-check[type="radio"]:checked {
   border-radius: 50%;
   background-color: white;
   color: #6a1b9a;
-  font-weight: bold;
 }
 
 .btn-primary.btn-custom {
-  background-color: #60269E;
+  background-color: #60269e;
   color: white;
 }
 
-.btn-primary.btn-custom.hover{
-  background-color: #460E7E;
+.btn-primary.btn-custom.hover {
+  background-color: #460e7e;
   color: white;
 }
 
 .btn-primary.btn-custom.disabled {
-  background-color: #D8D3E4; 
+  background-color: #d8d3e4;
   color: white;
 }
-
-
-
 
 @import "bootstrap";
