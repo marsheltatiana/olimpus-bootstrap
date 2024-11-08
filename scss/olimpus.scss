@@ -485,4 +485,37 @@ input.btn-check[type="radio"]:checked {
   border: 5px solid $primary-default !important;
 }
 
+
+/* Buttons */
+
+.icon-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  color: #6a1b9a;
+  font-weight: bold;
+}
+
+.btn-primary.btn-custom {
+  background-color: #60269E;
+  color: white;
+}
+
+.btn-primary.btn-custom.hover{
+  background-color: #460E7E;
+  color: white;
+}
+
+.btn-primary.btn-custom.disabled {
+  background-color: #D8D3E4; 
+  color: white;
+}
+
+
+
+
 @import "bootstrap";
