@@ -452,9 +452,12 @@ body {
 
 /* Checkbox */
 
+.form-check-input[type="checkbox"] {
+  border: 1px solid $primary-default
+}
+
 .form-check-input[type="checkbox"]:checked {
   background-color: $primary-default;
-  border: 1px solid $gray-600
 }
 
 @import "bootstrap";
