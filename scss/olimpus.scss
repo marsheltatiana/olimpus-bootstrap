@@ -454,7 +454,31 @@ body {
 
 .form-check-input[type="checkbox"]:checked {
   background-color: $primary-default;
-  border: 1px solid $gray-600
+  border: 1px solid $gray-600;
+}
+
+.form-check-input[type="checkbox"] {
+  border: 1px solid $primary-default;
+}
+
+.form-check-input[type="checkbox"]:disabled {
+  border: 1px solid $primary-light; /* Borde púrpura */
+  background-color: $gray-200;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+input.btn-check[type="radio"] {
+  border: 10px solid $gray-300;
+
+}
+
+input.btn-check[type="radio"]:checked {
+  border: 5px solid $primary-default !important;
 }
 
 @import "bootstrap";

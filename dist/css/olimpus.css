@@ -22657,6 +22657,28 @@ body {
   border: 1px solid #6c757d;
 }
 
+.form-check-input[type=checkbox] {
+  border: 1px solid #60269e;
+}
+
+.form-check-input[type=checkbox]:disabled {
+  border: 1px solid #d8d3e4; /* Borde púrpura */
+  background-color: #e9ecef;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input.btn-check[type=radio] {
+  border: 10px solid #dee2e6;
+}
+
+input.btn-check[type=radio]:checked {
+  border: 5px solid #60269e !important;
+}
+
 /*!
  * Bootstrap  v5.3.0 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
